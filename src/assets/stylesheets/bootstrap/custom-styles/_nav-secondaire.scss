@@ -1,0 +1,183 @@
+#nav-secondaire{
+  .time-to-destination{
+    padding-left: 50px;
+    height: 30px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    line-height: 16px;
+    color: #e61915;
+
+    .glyphicon{
+      font-size: 26px;
+      position: absolute;;
+      left: 15px;
+      top: 50%;
+      margin-top: -12px;
+      width:26px;
+      height: 26px;
+    }
+  }
+  .flight-progress{
+    padding-right: 60px;
+    height: 50px;
+    .progress{
+      border-radius: 0;
+      background-color: #ccc;
+      height: 3px;
+      margin-bottom:0;
+      margin-top:20px;
+      &:after{
+        font-family: "Glyphicons Halflings";
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        content: "\e258";
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 20px;
+        top:50%;
+        margin-top:-10px;
+        color: #ccc;
+      }
+      .progress-bar{
+        background-color:#e61915;
+        //position: relative;
+        display: inline-block;
+        float: left;
+        &:after{
+          font-family: "Glyphicons Halflings";
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1;
+          //top: 1px;
+          height: 18px;
+          width: 20px;
+          content: "\e108";
+          //background: green;
+          display: inline-block;
+          position: absolute;
+          font-size: 20px;
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+          color: #e61915;
+          left:54%;
+          top:12px;
+        }
+      }
+    }
+  }
+  .arrivals-connections{
+    margin-top: 10px;
+    &:after{
+      font-family: "Glyphicons Halflings";
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1;
+      content: "\e258";
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 20px;
+      top:50%;
+      margin-top:-10px;
+      color: #ccc;
+    }
+    span{
+      padding-left: 40px;
+      display:flex;
+      line-height: 15px;
+      color: #e61915;
+      &:after,
+      &:before{
+        font-family: "Glyphicons Halflings";
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        height: 18px;
+        width: 20px;
+        content: "\e108";
+        display: inline-block;
+        position: absolute;
+        font-size: 16px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        color: #e61915;
+        left:10px;
+        top:5px;
+      }
+      &:before{
+        left:25px;
+        top:3px;
+      }
+    }
+  }
+  .temperature{
+    color: #e61915;
+    margin-top:10px;
+    &:after{
+      font-family: "Glyphicons Halflings";
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1;
+      content: "\e259";
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 0px;
+      top:50%;
+      margin-top:-10px;
+      color: #ccc;
+    }
+    .dest-code{
+      //background: blue;
+      width: 50%;
+      float: left;
+      height: 30px;
+      padding-top: 10px;
+      position: relative;
+      &:after,
+      &:before{
+        font-family: "Glyphicons Halflings";
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        content: "\2601";
+        font-size: 24px;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 10px;
+        top:50%;
+        margin-top:-5px;
+        color: #ccc;
+      }
+      &:before{
+          content: "\e124";
+          right: 5px;
+          top:24%;
+          color: orange;
+      }
+    }
+    .dest-temperature{
+      width: 50%;
+      float: left;
+      height: 30px;
+      padding: 5px 30px 0 20px;
+      line-height: 12px;
+      font-size: 12px;
+      strong{
+        font-size:15px;
+      }
+    }
+  }
+}
