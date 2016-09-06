@@ -6,17 +6,9 @@
  * User Configuration.
  **********************************************************************************************/
 /** Map relative paths to URLs. */
-var map = {
-    'ng2-bootstrap': 'vendor/ng2-bootstrap',
-};
+var map = {};
 /** User packages configuration. */
-var packages = {
-    'ng2-bootstrap': {
-        format: 'cjs',
-        defaultExtension: 'js',
-        main: 'ng2-bootstrap.js'
-    }
-};
+var packages = {};
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
  * Everything underneath this line is managed by the CLI.
@@ -36,11 +28,6 @@ var barrels = [
     // App specific barrels.
     'app',
     'app/shared',
-    'app/carousel',
-    'app/content',
-    'app/modal',
-    'app/tabs',
-    'app/content/movies',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
